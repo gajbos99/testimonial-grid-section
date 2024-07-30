@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(0, 0%, 81%);
+}
+body main {
+  padding: 71px 24px;
+}
+@media screen and (max-width: 900px) {
+  body main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 900px) {
+  body main {
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    grid-template-rows: 271px 271px;
+    grid-gap: 3rem;
+  }
+  body main .card-1 {
+    grid-column: 1/span 2;
+  }
+  body main .card-5 {
+    grid-column: 4/span 1;
+    grid-row: 1/span 2;
+  }
+  body main .card-4 {
+    grid-column: 2/span 2;
+  }
+}
+body main .card {
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-top: 26px;
+  border-radius: 8px;
+}
+body main .card .title {
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 16px;
+}
+body main .card .subtitle {
+  opacity: 70%;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 18px;
+}
+body main .card .person {
+  display: flex;
+  gap: 17px;
+}
+body main .card .person img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+body main .card .person .text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 18px;
+}
+body main .card .person .text h2 {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: 500;
+}
+body main .card .subheader {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  font-weight: 500;
+  opacity: 50%;
+}
+
+.white {
+  background-color: #fff;
+  color: hsl(217, 19%, 35%);
+}
+
+.dark {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(210, 46%, 95%);
+}
+
+.gray {
+  color: hsl(210, 46%, 95%);
+  background-color: #48556A;
+}
+
+.purple {
+  color: hsl(210, 46%, 95%);
+  background-color: hsl(263, 55%, 52%);
+}/*# sourceMappingURL=style.css.map */
